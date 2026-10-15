@@ -1,126 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade – Escola Bíblica (EBD)</title>
+<meta name="description" content="Como o aplicativo Escola Bíblica (EBD) coleta, usa, compartilha e protege os dados dos usuários.">
 <style>
+    :root {
+        --bg: #f3f5fa;
+        --card: #ffffff;
+        --text: #333333;
+        --muted: #5b6475;
+        --title: #2a4d8f;
+        --title-strong: #1f3b6e;
+        --soft: #eef3fc;
+        --line: #dde3ee;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #020b1d;
+            --card: #0b1730;
+            --text: #e5e7eb;
+            --muted: #b6c0d4;
+            --title: #93b4f5;
+            --title-strong: #c7d7fb;
+            --soft: #12234a;
+            --line: #23365e;
+        }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); }
+
     .politica-privacidade {
         max-width: 850px;
         margin: 40px auto;
         padding: 30px;
-        background: #ffffff;
+        background: var(--card);
         border-radius: 12px;
         font-family: "Segoe UI", Arial, sans-serif;
-        color: #333;
         line-height: 1.7;
         box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
+    @media (max-width: 640px) {
+        .politica-privacidade { margin: 0; padding: 20px 16px 32px; border-radius: 0; box-shadow: none; }
+    }
 
     .politica-privacidade h1 {
-        font-size: 2rem;
-        color: #2a4d8f;
-        margin-bottom: 20px;
+        font-size: 1.9rem;
+        line-height: 1.3;
+        color: var(--title);
+        margin: 0 0 8px;
         text-align: center;
     }
+    .politica-privacidade .atualizacao { text-align: center; color: var(--muted); margin: 0 0 24px; }
 
     .politica-privacidade h2 {
-        margin-top: 30px;
-        color: #1f3b6e;
-        border-left: 5px solid #2a4d8f;
+        margin-top: 32px;
+        color: var(--title-strong);
+        border-left: 5px solid var(--title);
         padding-left: 10px;
-        font-size: 1.4rem;
+        font-size: 1.35rem;
+        line-height: 1.35;
     }
+    .politica-privacidade h3 { margin-top: 20px; color: var(--title); font-size: 1.1rem; }
+    .politica-privacidade ul { margin: 10px 0 20px 20px; padding: 0; }
+    .politica-privacidade li { margin-bottom: 6px; }
+    .politica-privacidade strong { color: var(--title-strong); }
+    .politica-privacidade p { margin-top: 10px; }
+    .politica-privacidade a { color: var(--title); word-break: break-word; }
 
-    .politica-privacidade h3 {
-        margin-top: 20px;
-        color: #2a4d8f;
-        font-size: 1.1rem;
+    .destaque {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin: 16px 0;
     }
-
-    .politica-privacidade ul {
-        margin: 10px 0 20px 20px;
-    }
-
-    .politica-privacidade li {
-        margin-bottom: 6px;
-    }
-
-    .politica-privacidade strong {
-        color: #1f3b6e;
-    }
-
-    /* Destaque suave */
-    .politica-privacidade p {
-        margin-top: 10px;
-    }
+    .destaque p:first-child { margin-top: 0; }
+    .destaque p:last-child { margin-bottom: 0; }
 </style>
-
-<section class="politica-privacidade">
-    <h1>📘 Política de Privacidade – Escola Bíblica Dominical (EBD)</h1>
+</head>
+<body>
+<main class="politica-privacidade">
+    <h1>📘 Política de Privacidade – Escola Bíblica (EBD)</h1>
+    <p class="atualizacao">Última atualização: 15 de outubro de 2026</p>
 
     <p>
-        A presente Política de Privacidade tem como finalidade explicar, de forma clara e transparente, 
-        como o aplicativo <strong>EBD</strong> coleta, utiliza e protege as informações dos usuários, 
-        assegurando segurança e responsabilidade no ambiente de ensino cristão digital.
+        Esta Política de Privacidade explica, de forma clara, como o aplicativo <strong>Escola Bíblica (EBD)</strong>
+        coleta, usa, compartilha e protege os dados de quem o utiliza, em conformidade com a
+        Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018).
     </p>
-
-    <h2>1. Público-Alvo</h2>
-    <p>O aplicativo <strong>EBD</strong> é classificado como <strong>Livre</strong>, sendo adequado para:</p>
-    <ul>
-        <li>Crianças</li>
-        <li>Jovens</li>
-        <li>Adultos</li>
-    </ul>
-    <p>Todo o conteúdo possui caráter <strong>educativo e religioso</strong>, alinhado ao propósito da Escola Bíblica Dominical.</p>
-
-    <h2>2. Coleta e Uso de Dados</h2>
-    <p>Para garantir o funcionamento adequado das lições, o aplicativo pode lidar com os seguintes dados:</p>
-
-    <h3>• Informações de Conta</h3>
-    <ul>
-        <li>E-mail e senha</li>
-        <li>Armazenamento criptografado para acesso seguro</li>
-    </ul>
-
-    <h3>• Arquivos do Dispositivo (PDF)</h3>
-    <ul>
-        <li>Upload de documentos em PDF para leitura e estudo dentro do app</li>
-    </ul>
-
-    <h3>• Processamento de Voz e Texto</h3>
-    <ul>
-        <li>Utilização de IA (Google Gemini e Google Cloud TTS) para extrair texto dos PDFs</li>
-        <li>Geração de resumos</li>
-        <li>Conversão de texto em áudio humanizado</li>
-    </ul>
-
-    <h2>3. Tratamento de Dados Confidenciais</h2>
-
-    <h3>Privacidade de Arquivos</h3>
-    <ul>
-        <li>Os PDFs enviados são processados exclusivamente para gerar resumos e áudio</li>
-        <li>Os arquivos ficam vinculados à conta do usuário</li>
-        <li>Nenhum conteúdo é compartilhado com terceiros para fins publicitários</li>
-    </ul>
-
-    <h3>Segurança</h3>
-    <ul>
-        <li>Uso de tecnologias como <strong>SecureStore</strong> para proteger dados de login diretamente no dispositivo</li>
-    </ul>
-
-    <h2>4. Permissões do Dispositivo</h2>
-    <p>Para oferecer a experiência completa da funcionalidade <strong>Leitura Ativa</strong>, o app pode solicitar:</p>
-    <ul>
-        <li><strong>Acesso ao Armazenamento:</strong> seleção e estudo de revistas e lições em PDF</li>
-        <li><strong>Acesso à Internet:</strong> sincronização das lições e processamento de voz no servidor</li>
-    </ul>
-
-    <h2>5. Direitos do Usuário</h2>
-    <p>O usuário possui total controle sobre seus dados. É possível, a qualquer momento:</p>
-    <ul>
-        <li>Excluir lições</li>
-        <li>Excluir a conta</li>
-        <li>Remover permanentemente arquivos armazenados nos servidores</li>
-    </ul>
-
-    <h2>6. Contato</h2>
     <p>
-        Em caso de dúvidas sobre o tratamento de dados, entre em contato com o suporte da sua congregação 
-        ou pelo e-mail: <strong> naorespondaebdapp@gmail.com </strong>.
+        O app é usado por igrejas para organizar a Escola Bíblica Dominical: turmas, chamada, escalas de professores,
+        biblioteca de lições, Bíblia, Comunidade e finanças da EBD. O acesso ao app é criado pela liderança da igreja.
     </p>
-</section>
+
+    <div class="destaque">
+        <p><strong>Resumo:</strong> não vendemos seus dados, não exibimos publicidade e não coletamos sua localização,
+        seus contatos nem gravações de voz. Você pode excluir sua conta a qualquer momento pelo app ou pela página
+        <a href="https://escolabiblica-86mf.onrender.com/conta/excluir">escolabiblica-86mf.onrender.com/conta/excluir</a>.</p>
+    </div>
+
+    <h2>1. Quem é responsável pelos dados</h2>
+    <p>
+        A <strong>igreja</strong> que cadastra você decide quais informações de membro registrar e é responsável por elas.
+        O <strong>desenvolvedor do aplicativo EBD</strong> opera a plataforma e trata os dados em nome das igrejas, apenas para
+        fazer o app funcionar. Para dúvidas ou pedidos, veja a seção <a href="#contato">Contato</a>.
+    </p>
+
+    <h2>2. Dados que coletamos</h2>
+
+    <h3>• Conta e cadastro de membro</h3>
+    <ul>
+        <li>Nome, e-mail de login e senha (a senha é guardada com criptografia irreversível)</li>
+        <li>Data de nascimento, sexo, estado civil e informação de batismo</li>
+        <li>Igreja, turma e papel no app (por exemplo: aluno, professor, secretaria, tesouraria)</li>
+        <li>Foto de perfil, se você escolher enviar uma</li>
+    </ul>
+
+    <h3>• Atividades da Escola Bíblica</h3>
+    <ul>
+        <li>Presença nas aulas (chamada), escalas de professores, certificados e relatórios da igreja</li>
+    </ul>
+
+    <h3>• Finanças da EBD</h3>
+    <p>Registradas apenas por quem tem acesso à tesouraria da igreja:</p>
+    <ul>
+        <li>Ofertas por turma, vendas de revistas (comprador membro ou nome de um comprador avulso, forma de pagamento e valores)</li>
+        <li>Despesas, observações e comprovantes: foto tirada com a câmera, imagem da galeria ou arquivo PDF</li>
+    </ul>
+    <p>O app <strong>não processa pagamentos</strong> e não guarda dados de cartão ou de conta bancária.</p>
+
+    <h3>• Comunidade</h3>
+    <ul>
+        <li>Publicações (texto, até 4 fotos e versículos), comentários, reações e compartilhamentos</li>
+        <li>Pedidos de oração, inclusive anônimos: o nome fica oculto para os membros, mas visível para a moderação</li>
+        <li>Denúncias, bloqueios entre membros e o aceite das Regras da Comunidade</li>
+    </ul>
+
+    <h3>• Uso do app</h3>
+    <ul>
+        <li>Sessões de uso, telas e abas visitadas, títulos dos arquivos abertos e tempo de uso</li>
+        <li>Sistema do aparelho (Android ou iOS) e versão do app</li>
+    </ul>
+    <p>Esses dados ajudam a liderança da igreja a entender o uso do app e nos ajudam a melhorá-lo. Não são usados para publicidade.</p>
+
+    <h3>• Arquivos enviados</h3>
+    <ul>
+        <li>Documentos PDF que você abre ou envia para leitura, estudo, resumo ou conversão em áudio</li>
+    </ul>
+
+    <h3>• O que não coletamos</h3>
+    <ul>
+        <li>Localização, lista de contatos, identificador de publicidade ou gravações de áudio</li>
+        <li>Biometria: a impressão digital ou o reconhecimento facial são verificados pelo próprio aparelho, e o app nunca recebe esses dados</li>
+    </ul>
+
+    <h2>3. Permissões do aparelho</h2>
+    <p>O app só pede cada permissão quando você usa a função correspondente:</p>
+    <ul>
+        <li><strong>Câmera:</strong> fotografar comprovantes de despesas</li>
+        <li><strong>Fotos e arquivos:</strong> escolher foto de perfil, fotos para a Comunidade, comprovantes e PDFs (pelo seletor do sistema)</li>
+        <li><strong>Notificações:</strong> lembretes como o versículo do dia e aniversários, gerados no próprio aparelho</li>
+        <li><strong>Biometria:</strong> entrar no app sem digitar a senha</li>
+        <li><strong>Reprodução em segundo plano:</strong> continuar a narração de lições com a tela bloqueada</li>
+        <li><strong>Internet:</strong> sincronizar dados com o servidor da igreja</li>
+    </ul>
+
+    <h2>4. Como usamos os dados</h2>
+    <ul>
+        <li>Fazer o app funcionar: login, turmas, chamada, escalas, biblioteca, Comunidade e finanças</li>
+        <li>Segurança e moderação: filtro de palavras e links, moderação automática de fotos e análise de denúncias</li>
+        <li>Acessibilidade: leitura de PDFs, conversão de texto em áudio e tradução para Libras</li>
+        <li>Relatórios para a liderança da igreja, conforme o papel de cada pessoa</li>
+        <li>Recuperação de senha por e-mail e suporte</li>
+    </ul>
+    <p>Não vendemos dados pessoais e não criamos perfis para anúncios.</p>
+
+    <h2>5. Com quem os dados são compartilhados</h2>
+
+    <h3>Dentro da igreja</h3>
+    <ul>
+        <li>A liderança vê os dados conforme o papel de cada pessoa (por exemplo: a secretaria vê cadastro e chamada; a tesouraria vê finanças)</li>
+        <li>Na Comunidade, cada publicação é vista pela rede de igrejas, pela igreja ou pela turma, conforme o público escolhido por quem publicou</li>
+    </ul>
+
+    <h3>Prestadores de serviço</h3>
+    <p>Empresas que processam dados em nosso nome, apenas para operar o app:</p>
+    <ul>
+        <li><strong>Infraestrutura em nuvem (Render, TiDB Cloud, Oracle Cloud e Microsoft Azure)</strong>: hospedagem do servidor, banco de dados e armazenamento de fotos e arquivos</li>
+        <li><strong>Microsoft (Azure Speech)</strong> e <strong>Google (Gemini e Cloud Text-to-Speech)</strong>: conversão de texto em áudio</li>
+        <li><strong>Google Gemini</strong>: moderação automática das fotos da Comunidade, leitura de texto em PDFs e resumos</li>
+        <li><strong>Brevo</strong>: envio do e-mail de recuperação de senha</li>
+        <li><strong>VLibras</strong> e <strong>Hand Talk</strong>: tradução para Libras (recebem o trecho de texto a traduzir)</li>
+    </ul>
+
+    <h3>Conteúdo de terceiros</h3>
+    <p>
+        Para exibir a Bíblia, artigos do Portal EBD, vídeos do YouTube e lições da biblioteca (Google Drive), o app busca conteúdo
+        nesses serviços. Eles recebem apenas o pedido técnico (como o endereço IP do aparelho), não os seus dados de cadastro.
+    </p>
+
+    <h3>Obrigações legais</h3>
+    <p>Podemos compartilhar dados quando a lei ou uma autoridade competente exigir.</p>
+
+    <h2>6. Segurança</h2>
+    <ul>
+        <li>Comunicação com o servidor protegida por HTTPS</li>
+        <li>Senhas guardadas com criptografia irreversível</li>
+        <li>Credenciais de acesso guardadas no armazenamento seguro do aparelho</li>
+        <li>Acesso às informações controlado pelo papel de cada pessoa na igreja</li>
+        <li>Registro de auditoria das ações administrativas</li>
+    </ul>
+
+    <h2>7. Por quanto tempo guardamos</h2>
+    <ul>
+        <li>Os dados da conta e do uso do app ficam guardados enquanto a conta existir</li>
+        <li>Publicações, comentários e fotos que você excluir saem do app na hora</li>
+        <li>Registros de auditoria são mantidos por segurança e prevenção de fraudes, mesmo após a exclusão da conta, sem nome nem e-mail no registro da exclusão</li>
+    </ul>
+
+    <h2>8. Como excluir sua conta</h2>
+    <ul>
+        <li><strong>No app:</strong> Mais › Meu perfil › Excluir minha conta</li>
+        <li><strong>Sem o app:</strong> <a href="https://escolabiblica-86mf.onrender.com/conta/excluir">escolabiblica-86mf.onrender.com/conta/excluir</a> (com seu e-mail e senha)</li>
+        <li>Ou peça à liderança da sua igreja ou pelo e-mail de <a href="#contato">contato</a></li>
+    </ul>
+    <h3>O que é apagado</h3>
+    <ul>
+        <li>Seu acesso ao app: e-mail de login, senha e foto do perfil</li>
+        <li>Suas publicações, comentários, fotos e reações na Comunidade</li>
+        <li>Seu histórico de uso do app</li>
+    </ul>
+    <h3>O que fica, sem identificar você</h3>
+    <ul>
+        <li>Presenças, escalas, ofertas e vendas registradas pela igreja continuam nos relatórios como "Membro removido", sem nome, data de nascimento ou foto</li>
+    </ul>
+    <p>A exclusão é imediata e não pode ser desfeita.</p>
+
+    <h2>9. Seus direitos (LGPD)</h2>
+    <p>Você pode, a qualquer momento:</p>
+    <ul>
+        <li>Saber quais dados temos sobre você e pedir uma cópia</li>
+        <li>Corrigir dados incompletos ou desatualizados (pelo app ou com a liderança da igreja)</li>
+        <li>Pedir a exclusão ou a anonimização dos seus dados</li>
+        <li>Saber com quem seus dados são compartilhados</li>
+        <li>Retirar consentimentos dados, como o aceite das Regras da Comunidade, deixando de usar a função</li>
+    </ul>
+    <p>Respondemos aos pedidos em até 15 dias.</p>
+
+    <h2>10. Crianças e adolescentes</h2>
+    <p>
+        Alunos de todas as idades usam o app, inclusive crianças, com acesso criado pela liderança da igreja.
+        Os dados de menores são tratados apenas para as atividades da Escola Bíblica e no melhor interesse deles.
+        A Comunidade tem filtro de palavras e links, moderação automática de fotos, denúncia, bloqueio e moderação da igreja.
+        O app não exibe publicidade. Pais e responsáveis podem pedir a revisão ou a exclusão dos dados de um menor com a liderança
+        da igreja ou pelo e-mail de contato.
+    </p>
+
+    <h2>11. Alterações desta política</h2>
+    <p>
+        Quando esta política mudar, atualizaremos a data no topo desta página. Consulte-a sempre que quiser pelo app, em Mais › Meu perfil › Política de privacidade.
+    </p>
+
+    <h2 id="contato">12. Contato</h2>
+    <p>
+        Para dúvidas, pedidos sobre seus dados ou exclusão de conta, fale com a liderança da sua igreja ou escreva para
+        <strong>naorespondaebdapp@gmail.com</strong>.
+    </p>
+</main>
+</body>
+</html>
